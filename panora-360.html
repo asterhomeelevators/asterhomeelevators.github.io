@@ -8,7 +8,9 @@
 <meta property="og:title" content="Aster PANORA 360 Round Glass Home Lift | Aster Home Elevators">
 <meta property="og:description" content="India's first electric round lift for homes: shaft-free 360° glass elevator for indoor or outdoor use.">
 <meta property="og:image" content="images/hero-home-lift.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F2347'/%3E%3Cpath d='M16 6l2.6 7.4L26 16l-7.4 2.6L16 26l-2.6-7.4L6 16l7.4-2.6z' fill='%23C9A35E'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0F2347">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
@@ -19,9 +21,10 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 </style>
 <style>img{max-width:100%}html{scroll-behavior:smooth}[hidden]{display:none !important}</style>
 <style>
-.nav-toggle{display:none}
+.nav-toggle{display:none}.nav-contact{display:none}
 @media (max-width: 760px){
   .util-bar{display:none}
+  header img[alt="Aster Home Elevators"]{height:44px !important}
   header > div{flex-wrap:nowrap !important;padding:14px 20px !important;position:relative}
   header > div > a:last-child{display:none !important}
   .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;margin-left:auto;border:1px solid #2C477C;border-radius:6px;background:transparent;color:#FFFFFF;cursor:pointer}
@@ -51,6 +54,10 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
   footer a,#contact a,[style*="FOLLOW US"] a{min-height:40px;display:inline-flex !important;align-items:center}
   footer [style*="gap: 10px; font-size: 14px"]{gap:2px !important}
   details summary{padding:6px 0}
+  .f-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:32px 20px !important;padding-top:48px !important}
+  .f-brand,.f-contact{grid-column:1 / -1}
+  header.open nav .nav-contact{display:flex !important}
+  header nav .nav-contact a{border-bottom:0;min-height:44px;font-size:15px !important}
 }
 </style>
 </head>
@@ -59,7 +66,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 
 <header style="background: #0F2347; border-bottom: 1px solid #22396A;">
 <div style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: center; justify-content: space-between;">
-<a href="index.html" style="display: flex; flex-direction: column; line-height: 1;"><span style="font-size: 30px; font-weight: 700; letter-spacing: 0.04em; color: #FFFFFF;">ASTER<span style="color: #C9A35E;">✦</span></span><span style="font-size: 10px; letter-spacing: 0.42em; color: #C9D3E6; margin-top: 6px;">HOME ELEVATORS</span></a>
+<a href="index.html" aria-label="Aster Home Elevators home" style="display: flex; align-items: center;"><img src="images/aster-logo-light.png" alt="Aster Home Elevators" style="height: 54px; width: auto; display: block;"></a>
 <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 <nav aria-label="Models" style="display: flex; flex-wrap: wrap; gap: 8px 26px; font-size: 14px; font-weight: 500;">
 <a href="hydraulic-450.html" style="color: #FFFFFF;">Hydraulic 450</a>
@@ -68,6 +75,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <a href="panora-360.html" aria-current="page" style="color: #C9A35E;">PANORA 360</a>
 <a href="elite-880.html" style="color: #FFFFFF;">Elite 880</a>
 <a href="technology.html" style="color: #FFFFFF;">Technology</a>
+<div class="nav-contact" style="flex-direction: column; gap: 2px; padding-top: 14px;"><a href="tel:+916281639197" style="color: #FFFFFF; font-weight: 600;">Call +91 62816 39197</a><a href="https://wa.me/916281639197" style="color: #FFFFFF;">WhatsApp us</a><a href="mailto:info@asterhomeelevators.com" style="color: #C9D3E6;">info@asterhomeelevators.com</a><span style="display: flex; gap: 20px;"><a href="https://www.instagram.com/infoasterhomeelevators/" target="_blank" rel="noopener" style="color: #C9A35E;">Instagram</a><a href="https://www.facebook.com/share/p/1DragM6Jom/" target="_blank" rel="noopener" style="color: #C9A35E;">Facebook</a></span></div>
 </nav>
 <a href="#enquire" style="background: #C9A35E; color: #0A1830; font-weight: 600; font-size: 14px; padding: 13px 22px; border-radius: 4px; min-height: 44px; display: inline-flex; align-items: center;">Enquire now</a>
 </div>
@@ -182,11 +190,32 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <button type="submit" style="align-self: end; height: 48px; border: 0; border-radius: 4px; background: #C9A35E; color: #0A1830; font: inherit; font-weight: 600; cursor: pointer;">Request a call back</button>
 </form>
 </div>
-<div style="max-width: 1240px; margin: 0 auto; padding: 24px; border-top: 1px solid #22396A; font-size: 12px; color: #C9D3E6; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between;">
-<span>© 2026 Aster Home Elevators Pvt Ltd · Serving all Pan India</span>
-<span>info@asterhomeelevators.com · <a href="tel:+916281639197" style="color: #C9D3E6;">+91 62816 39197</a></span>
-</div>
 </section>
+
+<!-- Footer -->
+<footer style="background: #0A1830; color: #C9D3E6;">
+<div class="f-grid" style="max-width: 1240px; margin: 0 auto; padding: 64px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+<div class="f-brand">
+<img src="images/aster-logo-light.png" alt="Aster Home Elevators" style="height: 64px; width: auto; display: block; margin-bottom: 16px;">
+<div style="font-size: 11px; letter-spacing: 0.3em; margin-bottom: 8px;">ASTER HOME ELEVATORS PVT LTD</div>
+<div style="font-size: 14px; line-height: 1.7;">Elevating modern living. A European brand serving all Pan India.</div>
+<div class="f-social" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px;"><a href="https://www.instagram.com/infoasterhomeelevators/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #2C477C; border-radius: 999px; color: #FFFFFF; font-size: 14px;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>Instagram</a><a href="https://www.facebook.com/share/p/1DragM6Jom/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #2C477C; border-radius: 999px; color: #FFFFFF; font-size: 14px;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>Facebook</a></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;"><span style="font-size: 11px; letter-spacing: 0.3em; color: #C9A35E; margin-bottom: 4px;">ELEVATORS</span><a href="hydraulic-450.html" style="color: #C9D3E6;">Hydraulic 450</a><a href="mr720.html" style="color: #C9D3E6;">MR720</a><a href="tr680.html" style="color: #C9D3E6;">TR680</a><a href="panora-360.html" style="color: #C9D3E6;">PANORA 360</a><a href="elite-880.html" style="color: #C9D3E6;">Elite 880</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;"><span style="font-size: 11px; letter-spacing: 0.3em; color: #C9A35E; margin-bottom: 4px;">COMPANY</span><a href="index.html#about" style="color: #C9D3E6;">About Aster</a><a href="technology.html" style="color: #C9D3E6;">Technology</a><a href="index.html#offices" style="color: #C9D3E6;">Our offices</a><a href="home-lifts-hyderabad.html" style="color: #C9D3E6;">Home lifts in Hyderabad</a><a href="index.html#brochure" style="color: #C9D3E6;">Download brochure</a><a href="index.html#faq" style="color: #C9D3E6;">FAQ</a></div>
+<div class="f-contact" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;"><span style="font-size: 11px; letter-spacing: 0.3em; color: #C9A35E; margin-bottom: 4px;">CONTACT</span><a href="tel:+916281639197" style="color: #FFFFFF; font-size: 17px; font-weight: 600;">+91 62816 39197</a><a href="https://wa.me/916281639197?text=Hi%20Aster%2C%20I%27m%20interested%20in%20a%20home%20elevator." target="_blank" rel="noopener" style="color: #C9D3E6;">WhatsApp us</a><a href="mailto:info@asterhomeelevators.com" style="color: #C9D3E6;">info@asterhomeelevators.com</a><a href="index.html#contact" style="color: #C9D3E6;">Book a free site inspection</a></div>
+</div>
+<div style="max-width: 1240px; margin: 0 auto; padding: 32px 24px; border-top: 1px solid #22396A;">
+<div style="font-size: 11px; letter-spacing: 0.3em; color: #C9A35E; margin-bottom: 4px; margin-bottom: 18px;">OUR OFFICES</div>
+<div class="f-offices" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px 32px;">
+<address style="font-style: normal; font-size: 13px; line-height: 1.7; color: #C9D3E6;"><span style="display: block; font-size: 15px; font-weight: 600; color: #FFFFFF; margin-bottom: 4px;">Zaheerabad <span style="font-size: 11px; font-weight: 400; letter-spacing: 0.2em; color: #C9A35E;">· TELANGANA</span></span>MHHV+5HW, Mogudampally Road, NH65, Zaheerabad, Telangana 502220</address><address style="font-style: normal; font-size: 13px; line-height: 1.7; color: #C9D3E6;"><span style="display: block; font-size: 15px; font-weight: 600; color: #FFFFFF; margin-bottom: 4px;">Chennai <span style="font-size: 11px; font-weight: 400; letter-spacing: 0.2em; color: #C9A35E;">· TAMIL NADU</span></span>3rd Floor, Prestige Polygon, 471 Anna Salai, Rathna Nagar, Teynampet, Chennai, Tamil Nadu</address><address style="font-style: normal; font-size: 13px; line-height: 1.7; color: #C9D3E6;"><span style="display: block; font-size: 15px; font-weight: 600; color: #FFFFFF; margin-bottom: 4px;">Ranchi <span style="font-size: 11px; font-weight: 400; letter-spacing: 0.2em; color: #C9A35E;">· JHARKHAND</span></span>98G9+QQG, Mackey Rd, Ward Number 20, Deputy Para, Akhirtoli, Ranchi, Jharkhand 834001</address><address style="font-style: normal; font-size: 13px; line-height: 1.7; color: #C9D3E6;"><span style="display: block; font-size: 15px; font-weight: 600; color: #FFFFFF; margin-bottom: 4px;">New Delhi <span style="font-size: 11px; font-weight: 400; letter-spacing: 0.2em; color: #C9A35E;">· DELHI</span></span>4th Floor, Statesman House, Barakhamba Rd, Connaught Place, New Delhi, Delhi 110001</address>
+</div>
+</div>
+<div style="max-width: 1240px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid #22396A; font-size: 12px; line-height: 1.6; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between;">
+<span>© 2026 Aster Home Elevators Pvt Ltd · Serving all Pan India</span>
+<span style="display: flex; flex-wrap: wrap; gap: 6px 18px;"><span>Products shown may vary from actual product. Conditions apply.</span></span>
+</div>
+</footer>
 
 <a class="wa-float" href="https://wa.me/916281639197?text=Hi%20Aster%2C%20I%27m%20interested%20in%20a%20home%20elevator." aria-label="Chat with Aster on WhatsApp" style="position: fixed; right: 24px; bottom: 24px; z-index: 50; align-items: center; gap: 10px; background: #1F8F4E; color: #FFFFFF; padding: 14px 20px 14px 16px; border-radius: 999px; font-size: 15px; font-weight: 600; box-shadow: 0 10px 24px rgba(10,24,48,0.3);"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.4 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-1 .8c-1-.5-1.8-1.3-2.3-2.3l.8-1-1-2z"/></svg>WhatsApp us</a>
 <div class="m-bar" style="height: 64px;"></div>
