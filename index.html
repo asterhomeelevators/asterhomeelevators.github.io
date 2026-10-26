@@ -18,12 +18,47 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 .wa-float{display:flex}.m-bar{display:none}@media (max-width:720px){.wa-float{display:none}.m-bar{display:flex}}
 </style>
 <style>img{max-width:100%}html{scroll-behavior:smooth}[hidden]{display:none !important}</style>
+<style>
+.nav-toggle{display:none}
+@media (max-width: 760px){
+  .util-bar{display:none}
+  header > div{flex-wrap:nowrap !important;padding:14px 20px !important;position:relative}
+  header > div > a:last-child{display:none !important}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;margin-left:auto;border:1px solid #2C477C;border-radius:6px;background:transparent;color:#FFFFFF;cursor:pointer}
+  header nav{display:none !important;position:absolute;left:0;right:0;top:100%;z-index:60;background:#0F2347;border-top:1px solid #22396A;flex-direction:column !important;gap:0 !important;padding:8px 20px 20px;box-shadow:0 16px 30px rgba(10,24,48,.35)}
+  header.open nav{display:flex !important}
+  header nav a{display:flex;align-items:center;min-height:52px;font-size:17px !important;border-bottom:1px solid #22396A}
+  [style*="padding: 112px 24px"],[style*="padding: 96px 24px"]{padding-top:64px !important;padding-bottom:64px !important;padding-left:20px !important;padding-right:20px !important}
+  [style*="padding: 88px 24px"],[style*="padding: 48px 24px 88px"],[style*="padding: 88px 24px 72px"]{padding-top:40px !important;padding-bottom:56px !important;padding-left:20px !important;padding-right:20px !important}
+  [style*="gap: 64px"],[style*="gap: 56px"]{gap:36px !important}
+  [style*="margin: 0 0 56px"],[style*="margin-bottom: 56px"]{margin-bottom:32px !important}
+  [style*="margin: 0 0 48px"],[style*="margin-bottom: 48px"]{margin-bottom:28px !important}
+  [style*="minmax(180px, 1fr)"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  [style*="font-size: 36px; font-weight: 700"]{font-size:28px !important}
+  #why [style*="display: grid"],#reviews [style*="minmax(220px"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;column-gap:16px !important}
+  #about [style*="repeat(2, minmax(0, 1fr))"]{grid-template-columns:1fr !important}
+  #about img[style*="height: 420px"]{height:300px !important}
+  [style*="height: 620px"],[style*="height: 560px"]{height:420px !important}
+  img[style*="height: 616px"],img[style*="height: 640px"]{height:380px !important}
+  img[style*="height: 540px"],img[style*="height: 520px"],img[style*="height: 480px"]{height:340px !important}
+  img[style*="height: 440px"],img[style*="height: 420px"]{height:240px !important}
+  img[style*="height: 360px"]{height:260px !important}
+  [style*="grid-auto-rows: 300px"]{grid-auto-rows:170px !important}
+  #contact form{grid-template-columns:1fr !important;padding:22px !important}
+  #contact-done > div,[style*="padding: 48px 36px"]{padding:28px 22px !important}
+  [style*="padding: 40px; display: flex; flex-wrap: wrap"]{padding:24px !important}
+  table th,table td{padding:12px 14px !important}
+  footer a,#contact a,[style*="FOLLOW US"] a{min-height:40px;display:inline-flex !important;align-items:center}
+  footer [style*="gap: 10px; font-size: 14px"]{gap:2px !important}
+  details summary{padding:6px 0}
+}
+</style>
 </head>
 <body>
 <div style="font-family: Poppins, system-ui, sans-serif; color: #0F2347; background: #FBF9F1; width: 100%;">
 
 <!-- Utility bar -->
-<div style="background: #0A1830; color: #C9D3E6; font-size: 13px;">
+<div class="util-bar" style="background: #0A1830; color: #C9D3E6; font-size: 13px;">
 <div style="max-width: 1240px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; align-items: center;">
 <span style="letter-spacing: 0.2em; text-transform: uppercase; font-size: 11px; color: #C9A35E;">A European brand · Serving Pan India</span>
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
@@ -40,6 +75,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <span style="font-size: 30px; font-weight: 700; letter-spacing: 0.04em; color: #FFFFFF;">ASTER<span style="color: #C9A35E;">✦</span></span>
 <span style="font-size: 10px; letter-spacing: 0.42em; color: #C9D3E6; margin-top: 6px;">HOME ELEVATORS</span>
 </a>
+<button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 14px; font-weight: 500;">
 <a href="#range" style="color: #FFFFFF;">Elevators</a>
 <a href="technology.html" style="color: #FFFFFF;">Technology</a>
@@ -68,7 +104,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <p style="margin: 28px 0 0; font-size: 13px; color: #C9D3E6; letter-spacing: 0.02em;">24/7 remote monitoring · Error detection system · SOS calling · Lifetime motor warranty* · EU / IND / AU / ASME compliant</p>
 </div>
 <div style="flex: 1 1 420px; min-width: 0; height: 560px; border-radius: 8px; background: #17305C; border: 1px solid #2C477C; position: relative; overflow: hidden;">
-<img src="images/hero-home-lift.jpg" alt="Aster glass and navy home elevator beside a staircase in a luxury living room" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+<img fetchpriority="high" src="images/hero-home-lift.jpg" alt="Aster glass and navy home elevator beside a staircase in a luxury living room" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
 <div style="position: absolute; top: 0; right: 0; width: 140px; height: 140px; border-top: 2px solid #C9A35E; border-right: 2px solid #C9A35E; border-top-right-radius: 8px;"></div>
 </div>
 </div>
@@ -104,13 +140,13 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #3E4F6B;">From compact private residences to expansive villas, every installation is personalised to integrate naturally with the surrounding architecture.</p>
 </div>
 <div style="flex: 1 1 440px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;">
-<img src="images/cabin-laser-cut.jpg" alt="Aster cabin with laser-cut panels and marble inlay floor" style="width: 100%; height: 420px; border-radius: 8px; object-fit: cover; display: block;">
+<img loading="lazy" decoding="async" src="images/cabin-laser-cut.jpg" alt="Aster cabin with laser-cut panels and marble inlay floor" style="width: 100%; height: 420px; border-radius: 8px; object-fit: cover; display: block;">
 <div style="display: flex; flex-direction: column; gap: 16px;">
 <div style="flex: 1; border-radius: 8px; background: #0F2347; color: #FFFFFF; padding: 24px; display: flex; flex-direction: column; justify-content: flex-end;">
 <span style="font-size: 11px; letter-spacing: 0.3em; color: #C9A35E;">A EUROPEAN BRAND</span>
 <span style="font-size: 15px; line-height: 1.5; margin-top: 10px;">Contemporary aesthetics, thoughtful engineering and exceptional residential mobility.</span>
 </div>
-<img src="images/cabin-navy-starlight.jpg" alt="Navy Aster cabin with starlight ceiling" style="width: 100%; height: 160px; border-radius: 8px; object-fit: cover; display: block;">
+<img loading="lazy" decoding="async" src="images/cabin-navy-starlight.jpg" alt="Navy Aster cabin with starlight ceiling" style="width: 100%; height: 160px; border-radius: 8px; object-fit: cover; display: block;">
 </div>
 </div>
 </div>
@@ -161,7 +197,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
 
 <a href="hydraulic-450.html" style="background: #17305C; border: 1px solid #2C477C; border-radius: 8px; color: #FFFFFF; display: flex; flex-direction: column; overflow: hidden;">
-<img src="images/hydraulic-450.jpg" alt="Aster Hydraulic 450" style="width: 100%; height: 260px; object-fit: cover; display: block; background: #1E3A6C;">
+<img loading="lazy" decoding="async" src="images/hydraulic-450.jpg" alt="Aster Hydraulic 450" style="width: 100%; height: 260px; object-fit: cover; display: block; background: #1E3A6C;">
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 10px; flex: 1;">
 <span style="font-size: 10px; letter-spacing: 0.3em; color: #C9A35E;">HYDRAULIC</span>
 <span style="font-size: 20px; font-weight: 600;">Hydraulic 450</span>
@@ -171,7 +207,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 </a>
 
 <a href="mr720.html" style="background: #17305C; border: 1px solid #2C477C; border-radius: 8px; color: #FFFFFF; display: flex; flex-direction: column; overflow: hidden;">
-<img src="images/mr720.jpg" alt="Aster MR720" style="width: 100%; height: 260px; object-fit: cover; display: block; background: #1E3A6C;">
+<img loading="lazy" decoding="async" src="images/mr720.jpg" alt="Aster MR720" style="width: 100%; height: 260px; object-fit: cover; display: block; background: #1E3A6C;">
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 10px; flex: 1;">
 <span style="font-size: 10px; letter-spacing: 0.3em; color: #C9A35E;">MRL</span>
 <span style="font-size: 20px; font-weight: 600;">MR720</span>
@@ -181,7 +217,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 </a>
 
 <a href="tr680.html" style="background: #17305C; border: 1px solid #2C477C; border-radius: 8px; color: #FFFFFF; display: flex; flex-direction: column; overflow: hidden;">
-<img src="images/tr680.jpg" alt="Aster TR680" style="width: 100%; height: 260px; object-fit: cover; display: block; background: #1E3A6C;">
+<img loading="lazy" decoding="async" src="images/tr680.jpg" alt="Aster TR680" style="width: 100%; height: 260px; object-fit: cover; display: block; background: #1E3A6C;">
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 10px; flex: 1;">
 <span style="font-size: 10px; letter-spacing: 0.3em; color: #C9A35E;">TRACTION</span>
 <span style="font-size: 20px; font-weight: 600;">TR680</span>
@@ -191,7 +227,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 </a>
 
 <a href="panora-360.html" style="background: #17305C; border: 1px solid #2C477C; border-radius: 8px; color: #FFFFFF; display: flex; flex-direction: column; overflow: hidden;">
-<img src="images/panora-360.jpg" alt="Aster PANORA 360" style="width: 100%; height: 260px; object-fit: cover; display: block; background: #1E3A6C;">
+<img loading="lazy" decoding="async" src="images/panora-360.jpg" alt="Aster PANORA 360" style="width: 100%; height: 260px; object-fit: cover; display: block; background: #1E3A6C;">
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 10px; flex: 1;">
 <span style="font-size: 10px; letter-spacing: 0.3em; color: #C9A35E;">COMPLETE GLASS</span>
 <span style="font-size: 20px; font-weight: 600;">PANORA 360</span>
@@ -201,7 +237,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 </a>
 
 <a href="elite-880.html" style="background: #17305C; border: 1px solid #C9A35E; border-radius: 8px; color: #FFFFFF; display: flex; flex-direction: column; overflow: hidden;">
-<img src="images/elite-880.jpg" alt="Aster Elite 880" style="width: 100%; height: 260px; object-fit: cover; display: block; background: #1E3A6C;">
+<img loading="lazy" decoding="async" src="images/elite-880.jpg" alt="Aster Elite 880" style="width: 100%; height: 260px; object-fit: cover; display: block; background: #1E3A6C;">
 <div style="padding: 22px; display: flex; flex-direction: column; gap: 10px; flex: 1;">
 <span style="font-size: 10px; letter-spacing: 0.3em; color: #C9A35E;">SIGNATURE LUXURY · FLAGSHIP</span>
 <span style="font-size: 20px; font-weight: 600;">Elite 880</span>
@@ -260,7 +296,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <div style="border: 1px solid #2C477C; border-radius: 8px; padding: 18px 20px; display: flex; justify-content: space-between; gap: 12px;"><div><div style="font-weight: 600;">Montanari</div><div style="font-size: 13px; color: #C9D3E6;">Gearless traction machines</div></div><span style="font-size: 11px; letter-spacing: 0.25em; color: #C9A35E;">ITALY</span></div>
 <div style="border: 1px solid #2C477C; border-radius: 8px; padding: 18px 20px; display: flex; justify-content: space-between; gap: 12px;"><div><div style="font-weight: 600;">Ziehl-Abegg</div><div style="font-size: 13px; color: #C9D3E6;">VVVF drive technology</div></div><span style="font-size: 11px; letter-spacing: 0.25em; color: #C9A35E;">GERMANY</span></div>
 </div>
-<img src="images/gearless-motor.jpg" alt="Gearless PMSM traction motor" style="width: 100%; height: 220px; object-fit: contain; margin-top: 24px; background: #FFFFFF; border-radius: 8px; display: block;">
+<img loading="lazy" decoding="async" src="images/gearless-motor.jpg" alt="Gearless PMSM traction motor" style="width: 100%; height: 220px; object-fit: contain; margin-top: 24px; background: #FFFFFF; border-radius: 8px; display: block;">
 <a href="technology.html" style="display: inline-flex; align-items: center; min-height: 44px; margin-top: 24px; font-weight: 600; border-bottom: 1px solid #C9A35E;">Explore the technology →</a>
 </div>
 <div style="flex: 2 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
@@ -313,12 +349,12 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C9A35E;">Gallery</p>
 <h2 style="margin: 0 0 48px; font-size: clamp(32px, 4vw, 52px); line-height: 1.1; font-weight: 700;">Crafted for every home.</h2>
 <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-<img src="images/panora-360-spiral.jpg" alt="Aster PANORA 360 circular lift at the centre of a spiral staircase" style="flex: 1 1 420px; min-width: 0; height: 616px; object-fit: cover; border-radius: 8px; display: block;">
+<img loading="lazy" decoding="async" src="images/panora-360-spiral.jpg" alt="Aster PANORA 360 circular lift at the centre of a spiral staircase" style="flex: 1 1 420px; min-width: 0; height: 616px; object-fit: cover; border-radius: 8px; display: block;">
 <div style="flex: 1 1 420px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 300px; gap: 16px;">
-<img src="images/cabin-feature-wall.jpg" alt="Aster cabin with laser-cut feature wall and marble floor" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block;">
-<img src="images/mr720-entrance.jpg" alt="Steel and navy Aster elevator entrance" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block;">
-<img src="images/round-lift-staircase.jpg" alt="Round Aster lift beside a glass staircase" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block;">
-<img src="images/cabin-navy.jpg" alt="Navy Aster cabin with starlight ceiling" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block;">
+<img loading="lazy" decoding="async" src="images/cabin-feature-wall.jpg" alt="Aster cabin with laser-cut feature wall and marble floor" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block;">
+<img loading="lazy" decoding="async" src="images/mr720-entrance.jpg" alt="Steel and navy Aster elevator entrance" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block;">
+<img loading="lazy" decoding="async" src="images/round-lift-staircase.jpg" alt="Round Aster lift beside a glass staircase" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block;">
+<img loading="lazy" decoding="async" src="images/cabin-navy.jpg" alt="Navy Aster cabin with starlight ceiling" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block;">
 </div>
 </div>
 </div>
@@ -376,7 +412,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <section id="brochure" style="background: #0F2347; color: #FFFFFF;">
 <div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
 <div style="flex: 1 1 420px; min-width: 0; display: flex; gap: 28px; align-items: center;">
-<img src="images/tr680.jpg" alt="" style="flex: none; width: 120px; height: 170px; object-fit: cover; border-radius: 4px; border: 1px solid #2C477C; box-shadow: 10px 10px 0 #17305C;">
+<img loading="lazy" decoding="async" src="images/tr680.jpg" alt="" style="flex: none; width: 120px; height: 170px; object-fit: cover; border-radius: 4px; border: 1px solid #2C477C; box-shadow: 10px 10px 0 #17305C;">
 <div>
 <p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #C9A35E;">Free download</p>
 <h2 style="margin: 0 0 12px; font-size: clamp(28px, 3vw, 40px); line-height: 1.15; font-weight: 700;">Get the Aster brochure.</h2>
@@ -511,6 +547,12 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 </div>
 <script>
 (function () {
+  var tg = document.querySelector('.nav-toggle');
+  if (tg) {
+    var hd = tg.closest('header');
+    tg.addEventListener('click', function () { var o = hd.classList.toggle('open'); tg.setAttribute('aria-expanded', o); });
+    hd.querySelectorAll('nav a').forEach(function (a) { a.addEventListener('click', function () { hd.classList.remove('open'); tg.setAttribute('aria-expanded', 'false'); }); });
+  }
   var WA = "916281639197";
   function labelText(el) {
     var l = el.closest("label");

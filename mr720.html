@@ -18,6 +18,41 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 .wa-float{display:flex}.m-bar{display:none}@media (max-width:720px){.wa-float{display:none}.m-bar{display:flex}}
 </style>
 <style>img{max-width:100%}html{scroll-behavior:smooth}[hidden]{display:none !important}</style>
+<style>
+.nav-toggle{display:none}
+@media (max-width: 760px){
+  .util-bar{display:none}
+  header > div{flex-wrap:nowrap !important;padding:14px 20px !important;position:relative}
+  header > div > a:last-child{display:none !important}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;margin-left:auto;border:1px solid #2C477C;border-radius:6px;background:transparent;color:#FFFFFF;cursor:pointer}
+  header nav{display:none !important;position:absolute;left:0;right:0;top:100%;z-index:60;background:#0F2347;border-top:1px solid #22396A;flex-direction:column !important;gap:0 !important;padding:8px 20px 20px;box-shadow:0 16px 30px rgba(10,24,48,.35)}
+  header.open nav{display:flex !important}
+  header nav a{display:flex;align-items:center;min-height:52px;font-size:17px !important;border-bottom:1px solid #22396A}
+  [style*="padding: 112px 24px"],[style*="padding: 96px 24px"]{padding-top:64px !important;padding-bottom:64px !important;padding-left:20px !important;padding-right:20px !important}
+  [style*="padding: 88px 24px"],[style*="padding: 48px 24px 88px"],[style*="padding: 88px 24px 72px"]{padding-top:40px !important;padding-bottom:56px !important;padding-left:20px !important;padding-right:20px !important}
+  [style*="gap: 64px"],[style*="gap: 56px"]{gap:36px !important}
+  [style*="margin: 0 0 56px"],[style*="margin-bottom: 56px"]{margin-bottom:32px !important}
+  [style*="margin: 0 0 48px"],[style*="margin-bottom: 48px"]{margin-bottom:28px !important}
+  [style*="minmax(180px, 1fr)"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  [style*="font-size: 36px; font-weight: 700"]{font-size:28px !important}
+  #why [style*="display: grid"],#reviews [style*="minmax(220px"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;column-gap:16px !important}
+  #about [style*="repeat(2, minmax(0, 1fr))"]{grid-template-columns:1fr !important}
+  #about img[style*="height: 420px"]{height:300px !important}
+  [style*="height: 620px"],[style*="height: 560px"]{height:420px !important}
+  img[style*="height: 616px"],img[style*="height: 640px"]{height:380px !important}
+  img[style*="height: 540px"],img[style*="height: 520px"],img[style*="height: 480px"]{height:340px !important}
+  img[style*="height: 440px"],img[style*="height: 420px"]{height:240px !important}
+  img[style*="height: 360px"]{height:260px !important}
+  [style*="grid-auto-rows: 300px"]{grid-auto-rows:170px !important}
+  #contact form{grid-template-columns:1fr !important;padding:22px !important}
+  #contact-done > div,[style*="padding: 48px 36px"]{padding:28px 22px !important}
+  [style*="padding: 40px; display: flex; flex-wrap: wrap"]{padding:24px !important}
+  table th,table td{padding:12px 14px !important}
+  footer a,#contact a,[style*="FOLLOW US"] a{min-height:40px;display:inline-flex !important;align-items:center}
+  footer [style*="gap: 10px; font-size: 14px"]{gap:2px !important}
+  details summary{padding:6px 0}
+}
+</style>
 </head>
 <body>
 <div style="font-family: Poppins, system-ui, sans-serif; color: #0F2347; background: #FBF9F1; width: 100%;">
@@ -25,6 +60,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <header style="background: #0F2347; border-bottom: 1px solid #22396A;">
 <div style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: center; justify-content: space-between;">
 <a href="index.html" style="display: flex; flex-direction: column; line-height: 1;"><span style="font-size: 30px; font-weight: 700; letter-spacing: 0.04em; color: #FFFFFF;">ASTER<span style="color: #C9A35E;">✦</span></span><span style="font-size: 10px; letter-spacing: 0.42em; color: #C9D3E6; margin-top: 6px;">HOME ELEVATORS</span></a>
+<button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 <nav aria-label="Models" style="display: flex; flex-wrap: wrap; gap: 8px 26px; font-size: 14px; font-weight: 500;">
 <a href="hydraulic-450.html" style="color: #FFFFFF;">Hydraulic 450</a>
 <a href="mr720.html" aria-current="page" style="color: #C9A35E;">MR720</a>
@@ -57,7 +93,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 </div>
 </div>
 <div style="flex: 1 1 400px; min-width: 0; height: 620px; border-radius: 8px; overflow: hidden; background: #17305C; border: 1px solid #2C477C;">
-<img src="images/mr720.jpg" alt="Aster MR720 traction elevator with glass and steel shaft" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+<img fetchpriority="high" src="images/mr720.jpg" alt="Aster MR720 traction elevator with glass and steel shaft" style="width: 100%; height: 100%; object-fit: cover; display: block;">
 </div>
 </div>
 </section>
@@ -73,7 +109,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 
 <section style="background: #FBF9F1;">
 <div style="max-width: 1240px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center;">
-<div style="flex: 0 1 440px; min-width: 0; margin: 0 auto; border-radius: 8px; overflow: hidden;"><img src="images/mr720-entrance.jpg" alt="Aster MR720 traction elevator with glass shaft and laser-cut feature panel" style="width: 100%; aspect-ratio: 2 / 3; height: auto; object-fit: cover; display: block;"></div>
+<div style="flex: 0 1 440px; min-width: 0; margin: 0 auto; border-radius: 8px; overflow: hidden;"><img loading="lazy" decoding="async" src="images/mr720-entrance.jpg" alt="Aster MR720 traction elevator with glass shaft and laser-cut feature panel" style="width: 100%; aspect-ratio: 2 / 3; height: auto; object-fit: cover; display: block;"></div>
 <div style="flex: 1 1 480px; min-width: 0;">
 <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #7A5C24;">Overview</p>
 <h2 style="margin: 0 0 24px; font-size: clamp(30px, 3.5vw, 44px); line-height: 1.15; font-weight: 700;">More floors, more space, no machine room.</h2>
@@ -171,6 +207,12 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 </div>
 <script>
 (function () {
+  var tg = document.querySelector('.nav-toggle');
+  if (tg) {
+    var hd = tg.closest('header');
+    tg.addEventListener('click', function () { var o = hd.classList.toggle('open'); tg.setAttribute('aria-expanded', o); });
+    hd.querySelectorAll('nav a').forEach(function (a) { a.addEventListener('click', function () { hd.classList.remove('open'); tg.setAttribute('aria-expanded', 'false'); }); });
+  }
   var WA = "916281639197";
   function labelText(el) {
     var l = el.closest("label");

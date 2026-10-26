@@ -18,6 +18,41 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 .wa-float{display:flex}.m-bar{display:none}@media (max-width:720px){.wa-float{display:none}.m-bar{display:flex}}
 </style>
 <style>img{max-width:100%}html{scroll-behavior:smooth}[hidden]{display:none !important}</style>
+<style>
+.nav-toggle{display:none}
+@media (max-width: 760px){
+  .util-bar{display:none}
+  header > div{flex-wrap:nowrap !important;padding:14px 20px !important;position:relative}
+  header > div > a:last-child{display:none !important}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;margin-left:auto;border:1px solid #2C477C;border-radius:6px;background:transparent;color:#FFFFFF;cursor:pointer}
+  header nav{display:none !important;position:absolute;left:0;right:0;top:100%;z-index:60;background:#0F2347;border-top:1px solid #22396A;flex-direction:column !important;gap:0 !important;padding:8px 20px 20px;box-shadow:0 16px 30px rgba(10,24,48,.35)}
+  header.open nav{display:flex !important}
+  header nav a{display:flex;align-items:center;min-height:52px;font-size:17px !important;border-bottom:1px solid #22396A}
+  [style*="padding: 112px 24px"],[style*="padding: 96px 24px"]{padding-top:64px !important;padding-bottom:64px !important;padding-left:20px !important;padding-right:20px !important}
+  [style*="padding: 88px 24px"],[style*="padding: 48px 24px 88px"],[style*="padding: 88px 24px 72px"]{padding-top:40px !important;padding-bottom:56px !important;padding-left:20px !important;padding-right:20px !important}
+  [style*="gap: 64px"],[style*="gap: 56px"]{gap:36px !important}
+  [style*="margin: 0 0 56px"],[style*="margin-bottom: 56px"]{margin-bottom:32px !important}
+  [style*="margin: 0 0 48px"],[style*="margin-bottom: 48px"]{margin-bottom:28px !important}
+  [style*="minmax(180px, 1fr)"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  [style*="font-size: 36px; font-weight: 700"]{font-size:28px !important}
+  #why [style*="display: grid"],#reviews [style*="minmax(220px"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;column-gap:16px !important}
+  #about [style*="repeat(2, minmax(0, 1fr))"]{grid-template-columns:1fr !important}
+  #about img[style*="height: 420px"]{height:300px !important}
+  [style*="height: 620px"],[style*="height: 560px"]{height:420px !important}
+  img[style*="height: 616px"],img[style*="height: 640px"]{height:380px !important}
+  img[style*="height: 540px"],img[style*="height: 520px"],img[style*="height: 480px"]{height:340px !important}
+  img[style*="height: 440px"],img[style*="height: 420px"]{height:240px !important}
+  img[style*="height: 360px"]{height:260px !important}
+  [style*="grid-auto-rows: 300px"]{grid-auto-rows:170px !important}
+  #contact form{grid-template-columns:1fr !important;padding:22px !important}
+  #contact-done > div,[style*="padding: 48px 36px"]{padding:28px 22px !important}
+  [style*="padding: 40px; display: flex; flex-wrap: wrap"]{padding:24px !important}
+  table th,table td{padding:12px 14px !important}
+  footer a,#contact a,[style*="FOLLOW US"] a{min-height:40px;display:inline-flex !important;align-items:center}
+  footer [style*="gap: 10px; font-size: 14px"]{gap:2px !important}
+  details summary{padding:6px 0}
+}
+</style>
 </head>
 <body>
 <div style="font-family: Poppins, system-ui, sans-serif; color: #0F2347; background: #FBF9F1; width: 100%;">
@@ -25,6 +60,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <header style="background: #0F2347; border-bottom: 1px solid #22396A;">
 <div style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: center; justify-content: space-between;">
 <a href="index.html" style="display: flex; flex-direction: column; line-height: 1;"><span style="font-size: 30px; font-weight: 700; letter-spacing: 0.04em; color: #FFFFFF;">ASTER<span style="color: #C9A35E;">✦</span></span><span style="font-size: 10px; letter-spacing: 0.42em; color: #C9D3E6; margin-top: 6px;">HOME ELEVATORS</span></a>
+<button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 8px 26px; font-size: 14px; font-weight: 500;">
 <a href="hydraulic-450.html" style="color: #FFFFFF;">Hydraulic 450</a>
 <a href="mr720.html" style="color: #FFFFFF;">MR720</a>
@@ -54,7 +90,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 </div>
 </div>
 <div style="flex: 1 1 400px; min-width: 0; border-radius: 8px; overflow: hidden; background: #000000; border: 1px solid #2C477C;">
-<img src="images/integrated-controller.jpg" alt="Aster integrated microprocessor controller" style="width: 100%; height: 420px; object-fit: contain; display: block;">
+<img fetchpriority="high" src="images/integrated-controller.jpg" alt="Aster integrated microprocessor controller" style="width: 100%; height: 420px; object-fit: contain; display: block;">
 </div>
 </div>
 </section>
@@ -82,11 +118,11 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <h2 style="margin: 0 0 56px; font-size: clamp(32px, 4vw, 52px); line-height: 1.1; font-weight: 700;">Advanced features.</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
 <div style="background: #FFFFFF; border: 1px solid #E4E1D3; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
-<img src="images/door-control-system.jpg" alt="Aster closed-loop door operator mechanism" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+<img loading="lazy" decoding="async" src="images/door-control-system.jpg" alt="Aster closed-loop door operator mechanism" style="width: 100%; height: 240px; object-fit: cover; display: block;">
 <div style="padding: 26px;"><div style="font-size: 13px; font-weight: 300; color: #7A5C24;">01</div><div style="font-size: 20px; font-weight: 600; margin: 6px 0 10px;">Advanced door control system</div><div style="font-size: 15px; line-height: 1.7; color: #3E4F6B;">ASTER doors are driven by a closed-loop variable-frequency motor system, so they open and close smoothly, quietly, and with consistent stability. Anti-squeeze protection keeps every passenger safe, door after door.</div></div>
 </div>
 <div style="background: #FFFFFF; border: 1px solid #E4E1D3; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
-<img src="images/grease-less-rails.jpg" alt="Self-lubricating guide rails beside the cabin" style="width: 100%; height: 240px; object-fit: cover; object-position: center 30%; display: block;">
+<img loading="lazy" decoding="async" src="images/grease-less-rails.jpg" alt="Self-lubricating guide rails beside the cabin" style="width: 100%; height: 240px; object-fit: cover; object-position: center 30%; display: block;">
 <div style="padding: 26px;"><div style="font-size: 13px; font-weight: 300; color: #7A5C24;">02</div><div style="font-size: 20px; font-weight: 600; margin: 6px 0 10px;">Grease-less rails</div><div style="font-size: 15px; line-height: 1.7; color: #3E4F6B;">Self-lubricating guide rails remove the need for traditional lubricants. With no grease to attract dust or stain the shaft, friction and wear stay low, keeping the ride smooth, efficient, and long-lasting with minimal maintenance.</div></div>
 </div>
 <div style="background: #0F2347; color: #FFFFFF; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
@@ -130,7 +166,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <div style="border: 1px solid #E4E1D3; border-radius: 8px; padding: 20px 22px; display: flex; justify-content: space-between; gap: 12px; align-items: center;"><div><div style="font-size: 18px; font-weight: 600;">Montanari</div><div style="font-size: 14px; color: #3E4F6B;">High-efficiency gearless traction machines</div></div><span style="font-size: 11px; letter-spacing: 0.25em; color: #7A5C24;">ITALY</span></div>
 <div style="border: 1px solid #E4E1D3; border-radius: 8px; padding: 20px 22px; display: flex; justify-content: space-between; gap: 12px; align-items: center;"><div><div style="font-size: 18px; font-weight: 600;">Ziehl-Abegg</div><div style="font-size: 14px; color: #3E4F6B;">Advanced VVVF drive technology</div></div><span style="font-size: 11px; letter-spacing: 0.25em; color: #7A5C24;">GERMANY</span></div>
 <div style="background: #0F2347; color: #FFFFFF; border-radius: 8px; overflow: hidden; display: flex; flex-wrap: wrap;">
-<img src="images/cog-belt.jpg" alt="Aster polyurethane cog belt on a reel beside the lift mechanism" style="flex: 1 1 180px; min-width: 0; height: 300px; object-fit: cover; display: block; background: #000000;">
+<img loading="lazy" decoding="async" src="images/cog-belt.jpg" alt="Aster polyurethane cog belt on a reel beside the lift mechanism" style="flex: 1 1 180px; min-width: 0; height: 300px; object-fit: cover; display: block; background: #000000;">
 <div style="flex: 2 1 240px; min-width: 0; padding: 24px;">
 <div style="font-size: 11px; letter-spacing: 0.3em; color: #C9A35E;">GERMAN POLYURETHANE TECHNOLOGY</div>
 <div style="font-size: 20px; font-weight: 600; margin: 8px 0 12px;">ASTER cog belt</div>
@@ -168,7 +204,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 
 <section id="cabin" style="background: #FBF9F1;">
 <div style="max-width: 1240px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start;">
-<img src="images/cabin-wood-finish.jpg" alt="Aster cabin in wood veneer with brass trim and marble inlay floor" style="flex: 1 1 360px; min-width: 0; max-width: 480px; height: 640px; object-fit: cover; border-radius: 8px; display: block; margin: 0 auto;">
+<img loading="lazy" decoding="async" src="images/cabin-wood-finish.jpg" alt="Aster cabin in wood veneer with brass trim and marble inlay floor" style="flex: 1 1 360px; min-width: 0; max-width: 480px; height: 640px; object-fit: cover; border-radius: 8px; display: block; margin: 0 auto;">
 <div style="flex: 1 1 480px; min-width: 0;">
 <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #7A5C24;">Designed to elevate. Built to last.</p>
 <h2 style="margin: 0 0 12px; font-size: clamp(32px, 4vw, 52px); line-height: 1.1; font-weight: 700;">Cabin construction.</h2>
@@ -210,7 +246,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <div style="border: 1px solid #2C477C; border-radius: 6px; padding: 14px 16px; font-size: 14px; font-weight: 500;">Card access</div>
 </div>
 </div>
-<img src="images/cabin-panels.jpg" alt="Aster cabin operating panels: button, touch screen and keypad styles" style="flex: 1.3 1 480px; min-width: 0; height: 420px; object-fit: cover; border-radius: 8px; display: block;">
+<img loading="lazy" decoding="async" src="images/cabin-panels.jpg" alt="Aster cabin operating panels: button, touch screen and keypad styles" style="flex: 1.3 1 480px; min-width: 0; height: 420px; object-fit: cover; border-radius: 8px; display: block;">
 </div>
 </section>
 
@@ -218,7 +254,7 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 <div style="max-width: 1240px; margin: 0 auto; padding: 112px 24px;">
 <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.35em; text-transform: uppercase; color: #7A5C24;">Made to your taste</p>
 <h2 style="margin: 0 0 40px; font-size: clamp(32px, 4vw, 52px); line-height: 1.1; font-weight: 700;">Bespoke design options.</h2>
-<img src="images/bespoke-cabins.jpg" alt="Three Aster bespoke cabin designs in navy, marble and gold" style="width: 100%; height: 440px; object-fit: cover; border-radius: 8px; display: block; margin-bottom: 32px;">
+<img loading="lazy" decoding="async" src="images/bespoke-cabins.jpg" alt="Three Aster bespoke cabin designs in navy, marble and gold" style="width: 100%; height: 440px; object-fit: cover; border-radius: 8px; display: block; margin-bottom: 32px;">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px;">
 <div style="border-top: 2px solid #C9A35E; padding-top: 16px; font-size: 18px; font-weight: 600;">Bespoke ceiling</div>
 <div style="border-top: 2px solid #C9A35E; padding-top: 16px; font-size: 18px; font-weight: 600;">Bespoke cabin designs</div>
@@ -258,6 +294,12 @@ a{color:#C9A35E;text-decoration:none}a:hover{color:#E2C38A}
 </div>
 <script>
 (function () {
+  var tg = document.querySelector('.nav-toggle');
+  if (tg) {
+    var hd = tg.closest('header');
+    tg.addEventListener('click', function () { var o = hd.classList.toggle('open'); tg.setAttribute('aria-expanded', o); });
+    hd.querySelectorAll('nav a').forEach(function (a) { a.addEventListener('click', function () { hd.classList.remove('open'); tg.setAttribute('aria-expanded', 'false'); }); });
+  }
   var WA = "916281639197";
   function labelText(el) {
     var l = el.closest("label");
